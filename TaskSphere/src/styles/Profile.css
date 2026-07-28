@@ -1,0 +1,46 @@
+.profile{
+    padding:30px;
+}
+
+.profile-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:30px;
+}
+
+.profile-avatar{
+    font-size:80px;
+    color:#2563EB;
+}
+
+.profile-form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.profile-form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.profile-form input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+
+.profile-form button{
+    margin-top:25px;
+    padding:12px 25px;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}

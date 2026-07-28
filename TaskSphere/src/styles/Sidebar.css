@@ -1,0 +1,138 @@
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background: #1e3a8a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.logo h2{
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.sidebar nav{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.sidebar nav a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 14px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar nav a:hover{
+    background: rgba(255,255,255,0.15);
+}
+
+.sidebar nav a.active{
+    background: white;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.sidebar nav svg{
+    font-size: 20px;
+}
+
+/* ===========================
+   LOGOUT BUTTON
+=========================== */
+
+.logout-btn{
+    margin: 20px 15px 0;
+    width: calc(100% - 30px);
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #ef4444;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover{
+    background: #dc2626;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+.sidebar::-webkit-scrollbar{
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background: rgba(255,255,255,0.3);
+    border-radius: 20px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+.sidebar{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    margin-bottom: 20px;
+}
+
+.sidebar nav{
+    gap: 5px;
+}
+
+.logout-btn{
+    margin-bottom: 10px;
+}
+
+}

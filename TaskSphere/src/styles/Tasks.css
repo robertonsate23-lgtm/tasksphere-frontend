@@ -1,0 +1,419 @@
+/* ===========================
+   TASKS PAGE
+=========================== */
+
+.tasks{
+    min-height:100vh;
+    background:#f4f7fc;
+    padding:30px;
+    font-family:"Segoe UI",sans-serif;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.tasks-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.tasks-header h1{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:34px;
+    color:#2563eb;
+}
+
+/* ===========================
+   ADD BUTTON
+=========================== */
+
+.add-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 22px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search-box{
+    display:flex;
+    align-items:center;
+    background:white;
+    padding:12px 18px;
+    border-radius:10px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.search-box svg{
+    color:#666;
+    margin-right:10px;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:none;
+    font-size:15px;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table-container{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#2563eb;
+    color:white;
+}
+
+th{
+    padding:18px;
+    text-align:left;
+    font-weight:600;
+}
+
+td{
+    padding:16px;
+    border-bottom:1px solid #eee;
+}
+
+tbody tr{
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#f8fbff;
+}
+
+.no-data{
+    text-align:center;
+    color:#999;
+    padding:30px;
+}
+
+/* ===========================
+   PRIORITY BADGES
+=========================== */
+
+.priority{
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.priority.high{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.priority.medium{
+    background:#fef3c7;
+    color:#d97706;
+}
+
+.priority.low{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+
+.status{
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.status.pending{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.status.in-progress{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.status.completed{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    color:white;
+    padding:10px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#10b981;
+}
+
+.edit-btn:hover{
+    background:#059669;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+} 
+
+/* ===========================
+   TASKS PAGE
+=========================== */
+
+.tasks{
+    min-height:100vh;
+    background:#f4f7fc;
+    padding:30px;
+    font-family:"Segoe UI",sans-serif;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.tasks-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.tasks-header h1{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:34px;
+    color:#2563eb;
+}
+
+/* ===========================
+   ADD BUTTON
+=========================== */
+
+.add-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 22px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.add-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search-box{
+    display:flex;
+    align-items:center;
+    background:white;
+    padding:12px 18px;
+    border-radius:10px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.search-box svg{
+    color:#666;
+    margin-right:10px;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    outline:none;
+    background:none;
+    font-size:15px;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table-container{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#2563eb;
+    color:white;
+}
+
+th{
+    padding:18px;
+    text-align:left;
+    font-weight:600;
+}
+
+td{
+    padding:16px;
+    border-bottom:1px solid #eee;
+}
+
+tbody tr{
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#f8fbff;
+}
+
+.no-data{
+    text-align:center;
+    color:#999;
+    padding:30px;
+}
+
+/* ===========================
+   PRIORITY BADGES
+=========================== */
+
+.priority{
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.priority.high{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.priority.medium{
+    background:#fef3c7;
+    color:#d97706;
+}
+
+.priority.low{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+/* ===========================
+   STATUS BADGES
+=========================== */
+
+.status{
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.status.pending{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.status.in-progress{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.status.completed{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    color:white;
+    padding:10px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-right:8px;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#10b981;
+}
+
+.edit-btn:hover{
+    background:#059669;
+}
+
+.delete-btn{
+    background:#ef4444;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
